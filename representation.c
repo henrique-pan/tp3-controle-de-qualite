@@ -1,7 +1,7 @@
 // **************************************************************
-// Nom de l’auteur: Henrique Nascimento
+// Nom de l’auteur: Claude Bernard & Henrique Nascimento
 // Version/Date: 02 décembre 2017
-// Rôle: Étudiant
+// Rôle: Étudiants
 // **************************************************************
 
 #include <stdio.h>
@@ -152,7 +152,7 @@ Representation decimalABase(int base, long valeur)
 
     Representation nb = constructeur(size, base); 
     for (int i = 0, j = (size - 1); i < size; ++i, j--) {
-        nb.nombre[i] = temp[j];        
+        nb.nombre[i] = temp[j];       
     }    
       
     return nb;
@@ -197,12 +197,12 @@ long baseADecimal(Representation* nb)
 { 
     int *v = (*nb).nombre;
     int size = (*nb).taille;
-    int base = (*nb).base;
+    int base = (*nb).base;   
 
     long result = 0;
 
     for(int i = 0, j = (size - 1); i < size; i++, j--) {
-        int p = (int) pow((double) base, j);
+        long p = (long) pow((double) base, j);
         result += (v[i] * p);
     }
 

@@ -1,7 +1,7 @@
 // **************************************************************
-// Nom de l’auteur: Henrique Nascimento
+// Nom de l’auteur: Claude Bernard & Henrique Nascimento
 // Version/Date: 02 décembre 2017
-// Rôle: Étudiant
+// Rôle: Étudiants
 // **************************************************************
 
 void baseADecimalTest();
